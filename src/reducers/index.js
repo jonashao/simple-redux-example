@@ -1,12 +1,11 @@
-/**
- * Created by Jonas on 2016/12/13.
- */
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux'
 
-import {combineReducers} from 'redux';
 import posts from './post';
 
 const rootReducer = combineReducers({
-    posts
+    posts,
+    routing: routerReducer
 });
 
 export default rootReducer;
